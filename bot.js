@@ -13,7 +13,7 @@ const r1 = require('snekfetch');
 const jimp = require('jimp')
 const math = require('math-expression-evaluator'); 
 const child_process = require("child_process");
-const developers = ['290908670529896448'];
+const developers = ['518382540344655872'];
 const admin = ".";
 const prefix = ".";
 
@@ -26,7 +26,7 @@ client.on('ready', () => {
   console.log(`Servers : [ " ${client.guilds.size} " ]`);
   console.log(`Users : [ " ${client.users.size} " ]`);
   console.log(`Channels : [ " ${client.channels.size} " ]`);
-  console.log('By : '+`${client.users.get("290908670529896448").username}`)
+  console.log('By : '+`${client.users.get("518382540344655872").username}`)
    client.user.setActivity("You | .help",{type: 'WATCHING'})
    client.user.setStatus("dnd")
 });
@@ -111,7 +111,7 @@ client.on('message', message => {
             if(!message.channel.guild) return;
         let embed = new Discord.RichEmbed()
         .setTitle(`:small_orange_diamond: Click Here To Invite Planet. `)
-        .setURL(`https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=8`)
+        .setURL(`https://discordapp.com/api/oauth2/authorize?client_id=518382540344655872&permissions=0&scope=bot`)
      message.channel.sendEmbed(embed);
        }
    });
@@ -162,8 +162,8 @@ message.channel.send({embed:embed}).then(message => message.delete(5000));
         .setTitle('Check Your DM’s')
      const embed = new Discord.RichEmbed()
          .setColor('#36393e')
-         .setTitle('Click To Join Support Server')
-         .setURL('https://discord.gg/PYqcDqd')
+         .setTitle('Support ?')
+         .setURL('tell : AimBot>js#7339')
          .setDescription(`
          \`\`\`Main Commands  :\`\`\`         
          
@@ -335,8 +335,8 @@ const command = args.shift().toLowerCase();
 
 
   client.on('message',message =>{
-      var prefix = "#";
- if(message.content.split(' ')[0].toLowerCase() == prefix + 'myinv') {
+      var prefix = ".";
+ if(message.content.split(' ')[0].toLowerCase() == prefix + 'invites') {
 let guild = message.guild
 var codes = [""]
  var nul = 0
